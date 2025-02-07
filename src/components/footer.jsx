@@ -3,7 +3,7 @@ import './footer.css';
 function Footer() {
     return (
         <div className='footer'>
-            <p> created by Tom Chau</p>
+            <h2> Created by: Tom Chau @ 2025</h2>
         </div>
     );
 }

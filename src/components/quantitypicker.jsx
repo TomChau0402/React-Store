@@ -13,7 +13,7 @@ function QuantityPicker() {
     }
     function decrease() {
         const value = quantity - 1;
-        if (quantity ==1) return;
+        if (quantity === 1) return;
         setQuantity (value);
         
     }

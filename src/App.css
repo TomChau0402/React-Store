@@ -10,7 +10,7 @@ body{
   pointer-events: none;
 }
 .content{
-  min-height: calc(100vh-144.438px);
+  min-height: calc(100vh-108px);
 }
 @media (prefers-reduced-motion: no-preference) {
   .App-logo {

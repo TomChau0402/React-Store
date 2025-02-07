@@ -1,4 +1,14 @@
-.footer h1{
-    color: rgb(114, 114, 195);
+.footer{
+    background-color: rgb(83, 83, 232);
+    
+}
+
+.footer h2{
+    padding-top: 20px;
+    padding-bottom: 20px;
+    font-size: small;
+    color: white;
     text-align: center;
+    margin-bottom: 0px;
+ 
 }

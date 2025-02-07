@@ -1,15 +1,25 @@
 import "./product.css";
 import QuantityPicker from "./quantitypicker";
 
-function Product() {
+function Product(props) {
+  function add(){
+    console.log("clicked");
+  }
     return(
       <div className="product">
-        <img src="https://picsum.photos/280/200" alt=""></img>
-        <h1>Carrots are the best</h1>
-        <QuantityPicker></QuantityPicker>
+        <img src={props.data.image} alt=""></img>
+
+        <h4>{props.data.title}</h4>
+
+        <label>{props.data.price}</label>
+
+        <div className="controls">
+          <QuantityPicker></QuantityPicker>
+        <button onClick={add} className="btn btn-sm btn info"> Add</button>
+        </div>
       </div>
     
 
-    )
+    );
 }
-export default Product
+export default Product;

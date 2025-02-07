@@ -2,3 +2,13 @@
     color: blue;
     text-align: center;
 }
+.catalog.filters {
+    margin-bottom: 20px;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+.catalog.filters button {
+    margin-right: 7px;
+    
+}
+
