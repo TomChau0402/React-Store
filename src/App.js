@@ -6,6 +6,8 @@ import Catalog from './Pages/catalog';
 import "bootstrap/dist/css/bootstrap.min.css";
 import "bootstrap/dist/js/bootstrap.min.js";
 import Footer from './components/footer';
+import About from './Pages/About';
+import Admin from './Pages/Admin';
 
 
 function App() {
@@ -13,7 +15,8 @@ function App() {
     <div className="App">
      <Navbar></Navbar>
      <Catalog></Catalog>
-   
+     <About></About>
+     <Admin></Admin>
      <Footer></Footer>
     </div>
      );

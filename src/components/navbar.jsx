@@ -6,6 +6,7 @@ function Navbar() {
         <div>
             <nav>
                 <div className="navbar-menu">
+                    <span className="title">Fruits!!!</span>
                     <a href="">Log In</a>
                     <a href="">Search</a>
                     <a href="">Subscribe</a>

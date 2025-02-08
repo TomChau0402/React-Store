@@ -1,19 +1,29 @@
 .navbar-menu{
     padding: 5px;
     display: flex;
-    justify-content: space-around;
     height: 60px;
     align-items: center;
     background-color: green;
 }
-a{
+.navbar-menu a{
     text-transform: uppercase;
-    font-size: 18px;
-    color: rgb(5,56,77);
+    font-size: 16px;
+    color: rgb(249, 252, 254);
     letter-spacing: 1px;
     font-weight: bolder;
     text-decoration: none;
+    margin-right: 20px;
 }
 a:hover{
-    color: blue;
+    color: rgb(14, 14, 223);
+    text-decoration: underline;
+    font-size: 20px;
 }
+
+.navbar-menu .title{
+    font-weight:bolder;
+    color: purple;
+    font-size: 30px;
+    margin-right: 20px;
+    margin-left: 10px ;
+   }
