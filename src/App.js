@@ -8,18 +8,31 @@ import "bootstrap/dist/js/bootstrap.min.js";
 import Footer from './components/footer';
 import About from './Pages/About';
 import Admin from './Pages/Admin';
+import { BrowserRouter, Routes, Route } from 'react-router-dom'
+import Home from './Pages/Home';
+import Cart from './Pages/Cart';
 
 
 function App() {
   return (
-    <div className="App">
-     <Navbar></Navbar>
-     <Catalog></Catalog>
-     <About></About>
-     <Admin></Admin>
-     <Footer></Footer>
-    </div>
-     );
+    <BrowserRouter>
+      <div className="App">
+        <Navbar></Navbar>
+
+        <Routes>
+          <Route path="/catalog" element={<Catalog></Catalog>}></Route>
+          <Route path="/admin" element={<Admin></Admin>}></Route>
+          <Route path="/about" element={<About></About>}></Route>
+          <Route path="/Home" element={<Home></Home>}></Route>
+          <Route path="/Home" element={<Home></Home>}></Route>
+          <Route path="/" element={<Home></Home>}></Route>
+          <Route path="/Cart" element={<Cart></Cart>}></Route>
+        </Routes>
+
+        <Footer></Footer>
+      </div>
+    </BrowserRouter>
+  );
 }
 
 export default App;

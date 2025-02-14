@@ -23,7 +23,9 @@ function About() {
                         : "show my Email"
                 }
             </button>
+            <img src="./images/about-page-fruit" alt="" />
         </div>
     );
+    
 }
 export default About;

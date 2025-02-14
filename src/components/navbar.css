@@ -27,3 +27,7 @@ a:hover{
     margin-right: 20px;
     margin-left: 10px ;
    }
+
+.navbar-menu .end {
+    margin-left: auto;
+}
