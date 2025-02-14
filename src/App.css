@@ -44,4 +44,5 @@ body{
 .page {
   min-height: calc(100vh - 120px);
   background-color: rgb(145, 234, 163);
+  
 }

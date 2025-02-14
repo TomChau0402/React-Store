@@ -1,16 +1,19 @@
-.Admin{
+.Admin {
    padding: 10px;
+   padding-bottom: 10px;
+   
+  ;
     
 }
 
 .Admin h2{
   
-     color: rgb(54, 224, 102);
+     color: rgb(100, 124, 107);
   
 }
 .Admin .prods,
 .Admin .cpns {
-    border: 1px solid #666;
+    border: 1px solid #e3cdcd;
     border-radius: 4px;
     background-color: white;
 }
@@ -30,7 +33,7 @@
     text-align: center;
 }
 .form-control{
-    background-color: rgb(105, 190, 136);
+    background-color: white;
     width: 80%;
 }
 
