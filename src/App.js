@@ -5,16 +5,20 @@ import footer from './components/footer';
 import Catalog from './Pages/catalog';
 import "bootstrap/dist/css/bootstrap.min.css";
 import "bootstrap/dist/js/bootstrap.min.js";
+import "@fortawesome/fontawesome-free/css/all.min.css";
+import "@fortawesome/fontawesome-free/js/all.min.js";
 import Footer from './components/footer';
 import About from './Pages/About';
 import Admin from './Pages/Admin';
 import { BrowserRouter, Routes, Route } from 'react-router-dom'
 import Home from './Pages/Home';
 import Cart from './Pages/Cart';
+import GlobalProvider from './state/globalProvider';
 
 
 function App() {
   return (
+    <GlobalProvider>
     <BrowserRouter>
       <div className="App">
         <Navbar></Navbar>
@@ -32,6 +36,7 @@ function App() {
         <Footer></Footer>
       </div>
     </BrowserRouter>
+    </GlobalProvider>
   );
 }
 

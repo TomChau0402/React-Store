@@ -31,3 +31,8 @@ a:hover{
 .navbar-menu .end {
     margin-left: auto;
 }
+.navbar-menu .user-info{
+    border: 1px solid;
+    border-radius: 4 px;
+    padding: 7px;
+}
