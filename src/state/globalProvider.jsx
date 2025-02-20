@@ -4,9 +4,13 @@ import DataContext from "./dataContext";
 
 function GlobalProvider(props) {
     const [cart, setCart] = useState([]);
-    const [user, setUser] = useState({name: "tom"});
+    const [user, setUser] = useState({ name: "Tom" });
 
-    function addProductToCart() {
+    function addProductToCart(product) {
+        console.log("Global add");
+        let copy = [...cart];
+        copy.push(product);
+        setCart(copy);
 
     }
     function removeProductFromCart() {

@@ -36,3 +36,11 @@ a:hover{
     border-radius: 4 px;
     padding: 7px;
 }
+.navbar-menu .i-user{
+    margin-right: 3 px;
+    font-size: 30px;
+    color:rgb(211, 150, 228);
+}
+.navbar-menu .badge{
+    margin-right: 5px;
+}

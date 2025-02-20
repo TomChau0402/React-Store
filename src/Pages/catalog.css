@@ -1,14 +1,23 @@
-.catalog h1{
+.catalog h1 {
     color: blue;
     text-align: center;
 }
-.catalog.filters {
+
+.catalog .filters {
     margin-bottom: 20px;
     padding-left: 10px;
     padding-right: 10px;
-}
-.catalog.filters button {
-    margin-right: 7px;
-    
+  
 }
 
+.catalog .filters button {
+    margin-right: 7px;
+
+}
+
+.filters {
+    display: flex;
+    gap: 12px;
+    justify-content: center;
+    margin-bottom: 12px;
+}

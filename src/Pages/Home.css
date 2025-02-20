@@ -17,15 +17,19 @@
     width: 40%;
     height: 50%;
 
-  
- 
+
 }
 
-.Home .info {
-    position: absolute;
+.Home .info h3,
+.Home .info h4 {
+
     top: 40%;
-    right: 17%;
-    left: 15%;
+    right: 2%;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 56px !important;
 
-
+}
+.image-container{
+    background-color:white;
+    text-align: start;
 }
