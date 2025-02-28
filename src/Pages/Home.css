@@ -25,11 +25,14 @@
 
     top: 40%;
     right: 2%;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     font-size: 56px !important;
 
 }
 .image-container{
-    background-color:white;
+    background-color:rgb(108, 102, 229);
     text-align: start;
+    width: 80%;
+    height: 70%;
+
 }

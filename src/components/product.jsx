@@ -10,13 +10,12 @@ function Product(props) {
 
 
   function add() {
-   let prodForCart = {...props.data, quantity: quantity};
-   
+    let prodForCart = { ...props.data, quantity: quantity };
     addProductToCart(prodForCart);
   }
 
   function handleQuantity(qty) {
-    console.log("quantity change!", qty);
+    console.log("quantity changed!", qty);
     setQuantity(qty);
   }
 

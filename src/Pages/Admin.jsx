@@ -1,5 +1,6 @@
-import { useState } from 'react';
+import { useEffect, useState } from 'react';
 import './Admin.css';
+import dataService from '../services/dataService';
 
 function Admin() {
     const [allCoupons, setAllCoupons] = useState([]);
@@ -8,6 +9,7 @@ function Admin() {
         discount: ""
     });
 
+    const [allProducts, setAllProducts] = useState([]);
     const [product, setProduct] = useState({
         title: "",
         price: "",
@@ -28,6 +30,9 @@ function Admin() {
 
     function saveCoupon() {
         console.log(coupon);
+        const validCoupon = {...coupon};
+        validCoupon.discount = parseFloat(validCoupon.discount);
+        dataService.saveCoupon(validCoupon);
 
         let copy = [...allCoupons];
         copy.push(coupon);
@@ -40,13 +45,39 @@ function Admin() {
         console.log("text Changed", text, name);
 
         let copy = { ...coupon };
-        copy[name] = Text;
+        copy[name] = text;
         setCoupon(copy);
     }
 
-    function saveProduct() {
+    async function saveProduct() {
         console.log(product)
+
+        let validProd = {...product};
+        validProd.price = parseFloat(validProd.price);
+        let saveProd = await dataService.saveProduct(validProd);
+        console.log(saveProd);
+       
+
+        let copy =[...allProducts];
+        copy.push(product);
+        setAllProducts(copy);       
     }
+
+    async function loadProducts() {
+        let  data = await dataService.getProducts();
+        setAllProducts(data);
+    }
+
+    async function loadCoupons() {
+        let data = await dataService.getCoupons();
+        setAllCoupons(data);
+        
+    }
+
+    useEffect(function() {
+        loadProducts();
+        loadCoupons();
+    }, []);
 
 
     return (
@@ -74,6 +105,7 @@ function Admin() {
                     <div className='controls'>
                         <button className='btn btn-dark' onClick={saveProduct}> Save product </button>
                     </div>
+                    {allProducts.map(p => <li>{p.title}</li>)}
 
                 </div>
                 <div className='cpns'>

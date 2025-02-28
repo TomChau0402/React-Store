@@ -39,6 +39,6 @@
 
 .parent .prods div, .cpns div {
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
     align-items: center;
 }
